@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <title>Faculty - Excellent Coaching</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .faculty-card {
+        transition: transform 0.3s ease;
+        margin-bottom: 30px;
+      }
+      .faculty-card:hover {
+        transform: translateY(-5px);
+      }
+      .faculty-img {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .faculty-social a {
+        color: #6c757d;
+        margin-right: 10px;
+        font-size: 18px;
+      }
+      .faculty-social a:hover {
+     
+        color: #ddf71b;
+      }
+      .department-tabs .nav-link {
+        color: #6c757d;
+        font-weight: 500;
+      }
+      .department-tabs .nav-link.active {
+        color: #f7e51b;
+        background-color: transparent;
+        border-bottom: 2px solid #f7e51b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area white-header">
+        <div class="main_menu">
+          <div class="search_input" id="search_input_box">
+            <div class="container">
+              <form class="d-flex justify-content-between" method="" action="">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="search_input"
+                  placeholder="Search Here"
+                />
+                <button type="submit" class="btn"></button>
+                <span
+                  class="ti-close"
+                  id="close_search"
+                  title="Close Search"
+                ></span>
+              </form>
+            </div>
+          </div>
+  
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand logo_h d-flex align-items-center" href="index.html">
+                <img
+                  src="img/logo.png"
+                  alt="Logo"
+                  style="height: 50px; width: auto; object-fit: contain;"
+                />
+                <span class="ms-2 caprasimo-regular brand-text" 
+                      style="font-family: 'Caprasimo', serif; text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;">
+                  Excellent Coaching
+                </span>
+              </a>
+              
+  
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse offset"
+                id="navbarSupportedContent"
+              >
+                <ul class="nav navbar-nav menu_nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About</a>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Pages</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="course-details.html"
+                          >Course Details</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="faculty.html">Faculty</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="success-stories.html">Success Stories</a>
+                      </li>
+                    
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link search" id="search">
+                      <i class="ti-search"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <!--================ End Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="banner_content text-center">
+                <h2>Our Faculty</h2>
+                <div class="page_link">
+                  <a href="index.html">Home</a>
+                  <a href="faculty.html">Faculty</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================ Start Faculty Area =================-->
+    <section class="course_details_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center mb-5">
+                        <h2>Meet Our Expert Faculty</h2>
+                        <p>Our distinguished faculty members bring years of experience and expertise to provide the best education</p>
+                    </div>
+                    
+                    <!-- Department Tabs -->
+                    <ul class="nav nav-tabs department-tabs justify-content-center mb-5" id="departmentTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="science-tab" data-toggle="tab" data-target="#science" type="button" role="tab" aria-controls="science" aria-selected="true">Science</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="mathematics-tab" data-toggle="tab" data-target="#mathematics" type="button" role="tab" aria-controls="mathematics" aria-selected="false">Mathematics</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="humanities-tab" data-toggle="tab" data-target="#humanities" type="button" role="tab" aria-controls="humanities" aria-selected="false">Humanities</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="languages-tab" data-toggle="tab" data-target="#languages" type="button" role="tab" aria-controls="languages" aria-selected="false">Languages</button>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="departmentTabContent">
+                        <!-- Science Department -->
+                        <div class="tab-pane fade show active" id="science" role="tabpanel" aria-labelledby="science-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty1.jpeg" class="card-img-top faculty-img" alt="Dr. Sarah Johnson">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dr. Sarah Johnson</h5>
+                                            <p class="card-text text-muted">Physics Department Head</p>
+                                            <p class="card-text">PhD in Physics from MIT with 15 years of teaching experience. Specializes in Quantum Mechanics and Astrophysics.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty2.jpeg" class="card-img-top faculty-img" alt="Prof. Michael Chen">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prof. Michael Chen</h5>
+                                            <p class="card-text text-muted">Chemistry Professor</p>
+                                            <p class="card-text">MSc in Organic Chemistry with 12 years of experience. Published over 20 research papers in international journals.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty3.jpeg" class="card-img-top faculty-img" alt="Dr. Emily Rodriguez">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dr. Emily Rodriguez</h5>
+                                            <p class="card-text text-muted">Biology Professor</p>
+                                            <p class="card-text">PhD in Molecular Biology with specialization in Genetics. 10 years of teaching and research experience.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mathematics Department -->
+                        <div class="tab-pane fade" id="mathematics" role="tabpanel" aria-labelledby="mathematics-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty4.jpeg" class="card-img-top faculty-img" alt="Prof. David Wilson">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prof. David Wilson</h5>
+                                            <p class="card-text text-muted">Mathematics Department Head</p>
+                                            <p class="card-text">PhD in Applied Mathematics with 18 years of teaching experience. Specializes in Calculus and Differential Equations.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty5.jpeg" class="card-img-top faculty-img" alt="Dr. Robert Kim">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dr. Robert Kim</h5>
+                                            <p class="card-text text-muted">Statistics Professor</p>
+                                            <p class="card-text">MSc in Statistics with 14 years of experience. Expert in Data Analysis and Probability Theory.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty6.jpeg" class="card-img-top faculty-img" alt="Prof. Lisa Thompson">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prof. Lisa Thompson</h5>
+                                            <p class="card-text text-muted">Algebra Professor</p>
+                                            <p class="card-text">PhD in Mathematics with specialization in Abstract Algebra. 11 years of teaching experience.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Humanities Department -->
+                        <div class="tab-pane fade" id="humanities" role="tabpanel" aria-labelledby="humanities-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty7.jpeg" class="card-img-top faculty-img" alt="Dr. James Anderson">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dr. James Anderson</h5>
+                                            <p class="card-text text-muted">History Department Head</p>
+                                            <p class="card-text">PhD in Modern History with 16 years of teaching experience. Specializes in European and American History.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty8.jpeg" class="card-img-top faculty-img" alt="Prof. Maria Garcia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prof. Maria Garcia</h5>
+                                            <p class="card-text text-muted">Political Science Professor</p>
+                                            <p class="card-text">MA in Political Science with 13 years of experience. Expert in International Relations and Political Theory.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty9.jpeg" class="card-img-top faculty-img" alt="Dr. Patricia Lee">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dr. Patricia Lee</h5>
+                                            <p class="card-text text-muted">Economics Professor</p>
+                                            <p class="card-text">PhD in Economics with specialization in Macroeconomics. 12 years of teaching and research experience.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Languages Department -->
+                        <div class="tab-pane fade" id="languages" role="tabpanel" aria-labelledby="languages-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty10.jpeg" class="card-img-top faculty-img" alt="Prof. Jennifer Brown">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prof. Jennifer Brown</h5>
+                                            <p class="card-text text-muted">English Department Head</p>
+                                            <p class="card-text">MAA in English Literature with 15 years of teaching experience. Specializes in British and merican Literature.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty11.jpeg" class="card-img-top faculty-img" alt="Dr. Carlos Martinez">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dr. Carlos Martinez</h5>
+                                            <p class="card-text text-muted">Spanish Professor</p>
+                                            <p class="card-text">Native Spanish speaker with PhD in Hispanic Studies. 10 years of experience teaching Spanish language and culture.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card faculty-card">
+                                        <img src="img/faculty/faculty12.jpeg" class="card-img-top faculty-img" alt="Prof. Sophie Dubois">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prof. Sophie Dubois</h5>
+                                            <p class="card-text text-muted">French Professor</p>
+                                            <p class="card-text">Native French speaker with MA in French Language and Literature. 8 years of teaching experience.</p>
+                                            <div class="faculty-social">
+                                                <a href="#"><i class="ti-linkedin"></i></a>
+                                                <a href="#"><i class="ti-twitter"></i></a>
+                                                <a href="#"><i class="ti-email"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Faculty Area =================-->
+
+    <!--================ Start footer Area  =================-->
+    <footer class="footer-area section_gap">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Top Products</h4>
+                  <ul>
+                    <li><a href="#">Managed Website</a></li>
+                    <li><a href="#">Manage Reputation</a></li>
+                    <li><a href="#">Power Tools</a></li>
+                    <li><a href="#">Marketing Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Brand Assets</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Features</h4>
+                  <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Brand Assets</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Resources</h4>
+                  <ul>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Experts</a></li>
+                    <li><a href="#">Agencies</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 single-footer-widget">
+                  <h4>Newsletter</h4>
+                  <p>You can trust us. we only send promo offers,</p>
+                  <div class="form-wrap" id="mc_embed_signup">
+                    <form
+                      target="_blank"
+                      action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                      method="get"
+                      class="form-inline"
+                    >
+                      <input
+                        class="form-control"
+                        name="EMAIL"
+                        placeholder="Your Email Address"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Your Email Address'"
+                        required=""
+                        type="email"
+                      />
+                      <button class="click-btn btn btn-default">
+                        <span>subscribe</span>
+                      </button>
+                      <div style="position: absolute; left: -5000px;">
+                        <input
+                          name="b_36c4fd991d266f23781ded980_aefe40901a"
+                          tabindex="-1"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+      
+                      <div class="info"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row footer-bottom d-flex justify-content-between">
+                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+                
+                </p>
+                <div class="col-lg-4 col-sm-12 footer-social">
+                  <a href="#"><i class="ti-facebook"></i></a>
+                  <a href="#"><i class="ti-twitter"></i></a>
+                  <a href="#"><i class="ti-dribbble"></i></a>
+                  <a href="#"><i class="ti-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!--================ End footer Area  =================-->
+      
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="js/jquery-3.2.1.min.js"></script>
+          <script src="js/popper.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+          <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+          <script src="js/owl-carousel-thumb.min.js"></script>
+          <script src="js/jquery.ajaxchimp.min.js"></script>
+          <script src="js/mail-script.js"></script>
+          <!--gmaps Js-->
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+          <script src="js/gmaps.min.js"></script>
+          <script src="js/theme.js"></script>
+        </body>
+      </html>

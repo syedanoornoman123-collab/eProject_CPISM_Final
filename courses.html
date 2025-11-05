@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <title>Courses - Excellent Coaching</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .course-card {
+        transition: transform 0.3s ease;
+        margin-bottom: 30px;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      .course-card:hover {
+        transform: translateY(-5px);
+      }
+      .course-img {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .course-category {
+        color: #002347;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+      .course-title {
+        color: #222;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      .course-instructor {
+        color: #666;
+        margin-bottom: 15px;
+      }
+      .course-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+      }
+      .course-price {
+        color: #002347;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .course-rating {
+        color: #ffc107;
+      }
+      .department-section {
+        margin-bottom: 60px;
+      }
+      .department-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #002347;
+      }
+      .filter-buttons {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .filter-btn {
+        margin: 0 10px;
+        padding: 10px 25px;
+        border: 2px solid #002347;
+        background: transparent;
+        color: #002347;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+      }
+      .filter-btn.active, .filter-btn:hover {
+        background: #002347;
+        color: white;
+      }
+      .course-level {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: #002347;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .course-details-btn {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        background: #002347;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 15px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      .course-details-btn:hover {
+        background: #001a33;
+        color: white;
+        text-decoration: none;
+      }
+      .price_list_download {
+    background: #f9f9ff;
+    padding: 80px 0;
+}
+
+.download-card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+}
+
+.download-icon {
+    font-size: 60px;
+    color: #002347;
+    margin-bottom: 20px;
+}
+
+.download-card h3 {
+    color: #002347;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.download-card p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #002347;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #001a33;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,35,71,0.3);
+}
+    </style>
+  </head>
+
+  <body>
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area white-header">
+        <div class="main_menu">
+          <div class="search_input" id="search_input_box">
+            <div class="container">
+              <form class="d-flex justify-content-between" method="" action="">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="search_input"
+                  placeholder="Search Here"
+                />
+                <button type="submit" class="btn"></button>
+                <span
+                  class="ti-close"
+                  id="close_search"
+                  title="Close Search"
+                ></span>
+              </form>
+            </div>
+          </div>
+  
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand logo_h d-flex align-items-center" href="index.html">
+                <img
+                  src="img/logo.png"
+                  alt="Logo"
+                  style="height: 50px; width: auto; object-fit: contain;"
+                />
+                <span class="ms-2 caprasimo-regular brand-text" 
+                      style="font-family: 'Caprasimo', serif; text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;">
+                  Excellent Coaching
+                </span>
+              </a>
+              
+  
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse offset"
+                id="navbarSupportedContent"
+              >
+                <ul class="nav navbar-nav menu_nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About</a>
+                  </li>
+                  <li class="nav-item submenu dropdown active">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Pages</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="course-details.html"
+                          >Course Details</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="faculty.html">Faculty</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="success-stories.html">Success Stories</a>
+                      </li>
+                    
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link search" id="search">
+                      <i class="ti-search"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <!--================ End Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="banner_content text-center">
+                <h2>Our Courses</h2>
+                <div class="page_link">
+                  <a href="index.html">Home</a>
+                  <a href="courses.html">Courses</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================ Start Courses Area =================-->
+    <section class="course_details_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center mb-5">
+                        <h2>Explore Our Courses</h2>
+                        <p>Choose from a wide range of courses taught by our expert faculty members</p>
+                    </div>
+                    
+                    <!-- Filter Buttons -->
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Courses</button>
+                        <button class="filter-btn" data-filter="science">Science</button>
+                        <button class="filter-btn" data-filter="mathematics">Mathematics</button>
+                        <button class="filter-btn" data-filter="humanities">Humanities</button>
+                        <button class="filter-btn" data-filter="languages">Languages</button>
+                    </div>
+
+                    <!-- Science Department Courses -->
+                    <div class="department-section" id="science">
+                        <div class="department-header">
+                            <h3>Science Department</h3>
+                            <p>Comprehensive courses in Physics, Chemistry, and Biology</p>
+                        </div>
+                        <div class="row">
+                            <!-- Course 1 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/physics.jpg" class="card-img-top course-img" alt="Physics Fundamentals">
+                                        <span class="course-level">Beginner</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">Physics</span>
+                                        <h5 class="course-title">Physics Fundamentals</h5>
+                                        <p class="course-instructor">By Dr. Sarah Johnson</p>
+                                        <p class="card-text">Master the basic concepts of mechanics, thermodynamics, and electromagnetism.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$199</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star"></i>
+                                                <span>(128)</span>
+                                            </div>
+                                        </div>
+                                        <a href="physics-details.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 2 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/chemistry.webp" class="card-img-top course-img" alt="Organic Chemistry">
+                                        <span class="course-level">Intermediate</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">Chemistry</span>
+                                        <h5 class="course-title">Organic Chemistry</h5>
+                                        <p class="course-instructor">By Prof. Michael Chen</p>
+                                        <p class="card-text">Deep dive into organic compounds, reactions, and molecular structures.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$249</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <span>(95)</span>
+                                            </div>
+                                        </div>
+                                        <a href="chemistry-details.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 3 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/biology.jpg" class="card-img-top course-img" alt="Genetics & Molecular Biology">
+                                        <span class="course-level">Advanced</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">Biology</span>
+                                        <h5 class="course-title">Genetics & Molecular Biology</h5>
+                                        <p class="course-instructor">By Dr. Emily Rodriguez</p>
+                                        <p class="card-text">Explore DNA, RNA, protein synthesis and genetic engineering techniques.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$299</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star"></i>
+                                                <span>(87)</span>
+                                            </div>
+                                        </div>
+                                        <a href="bio-details.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mathematics Department Courses -->
+                    <div class="department-section" id="mathematics">
+                        <div class="department-header">
+                            <h3>Mathematics Department</h3>
+                            <p>From basic arithmetic to advanced calculus and statistics</p>
+                        </div>
+                        <div class="row">
+                            <!-- Course 1 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/calculus.png" class="card-img-top course-img" alt="Calculus I">
+                                        <span class="course-level">Beginner</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">Mathematics</span>
+                                        <h5 class="course-title">Calculus I</h5>
+                                        <p class="course-instructor">By Prof. David Wilson</p>
+                                        <p class="card-text">Learn limits, derivatives, and applications of differentiation.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$179</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star"></i>
+                                                <span>(156)</span>
+                                            </div>
+                                        </div>
+                                        <a href="calculas-details.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 2 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/statistics.png" class="card-img-top course-img" alt="Probability & Statistics">
+                                        <span class="course-level">Intermediate</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">Mathematics</span>
+                                        <h5 class="course-title">Probability & Statistics</h5>
+                                        <p class="course-instructor">By Dr. Robert Kim</p>
+                                        <p class="card-text">Master probability theory, statistical inference, and data analysis.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$229</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <span>(112)</span>
+                                            </div>
+                                        </div>
+                                        <a href="Probability & Statistics-detail.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 3 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/Algebra.png" class="card-img-top course-img" alt="Linear Algebra">
+                                        <span class="course-level">Advanced</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">Mathematics</span>
+                                        <h5 class="course-title">Linear Algebra</h5>
+                                        <p class="course-instructor">By Prof. Lisa Thompson</p>
+                                        <p class="card-text">Study vector spaces, linear transformations, and matrix theory.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$259</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star"></i>
+                                                <span>(78)</span>
+                                            </div>
+                                        </div>
+                                        <a href="Linear-Algebra-details.html " class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Humanities Department Courses -->
+                    <div class="department-section" id="humanities">
+                        <div class="department-header">
+                            <h3>Humanities Department</h3>
+                            <p>Explore history, political science, and economics</p>
+                        </div>
+                        <div class="row">
+                            <!-- Course 1 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/history.png" class="card-img-top course-img" alt="World History">
+                                        <span class="course-level">Beginner</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">History</span>
+                                        <h5 class="course-title">World History</h5>
+                                        <p class="course-instructor">By Dr. James Anderson</p>
+                                        <p class="card-text">Journey through ancient civilizations to modern world events.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$159</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star"></i>
+                                                <span>(134)</span>
+                                            </div>
+                                        </div>
+                                        <a href="World-History-details.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 2 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/political-science.avif" class="card-img-top course-img" alt="Political Theory">
+                                        <span class="course-level">Intermediate</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">Political Science</span>
+                                        <h5 class="course-title">Political Theory</h5>
+                                        <p class="course-instructor">By Prof. Maria Garcia</p>
+                                        <p class="card-text">Study political ideologies, governance systems, and international relations.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$199</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <span>(89)</span>
+                                            </div>
+                                        </div>
+                                        <a href="Political-Theory.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 3 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/economics.webp" class="card-img-top course-img" alt="Macroeconomics">
+                                        <span class="course-level">Advanced</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">Economics</span>
+                                        <h5 class="course-title">Macroeconomics</h5>
+                                        <p class="course-instructor">By Dr. Patricia Lee</p>
+                                        <p class="card-text">Understand national income, monetary policy, and economic growth.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$239</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star"></i>
+                                                <span>(67)</span>
+                                            </div>
+                                        </div>
+                                        <a href="Macroeconomics-details.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages Department Courses -->
+                    <div class="department-section" id="languages">
+                        <div class="department-header">
+                            <h3>Languages Department</h3>
+                            <p>Master English, Spanish, French and more</p>
+                        </div>
+                        <div class="row">
+                            <!-- Course 1 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/english.jpg" class="card-img-top course-img" alt="English Literature">
+                                        <span class="course-level">All Levels</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">English</span>
+                                        <h5 class="course-title">English Literature</h5>
+                                        <p class="course-instructor">By Prof. Jennifer Brown</p>
+                                        <p class="card-text">Explore classic and contemporary English literature masterpieces.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$189</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star"></i>
+                                                <span>(145)</span>
+                                            </div>
+                                        </div>
+                                        <a href="English Literature-deatails.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 2 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/spanish.jpg" class="card-img-top course-img" alt="Spanish for Beginners">
+                                        <span class="course-level">Beginner</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">Spanish</span>
+                                        <h5 class="course-title">Spanish for Beginners</h5>
+                                        <p class="course-instructor">By Dr. Carlos Martinez</p>
+                                        <p class="card-text">Learn basic Spanish vocabulary, grammar, and conversation skills.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$169</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <span>(203)</span>
+                                            </div>
+                                        </div>
+                                        <a href="spanish-details.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 3 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card course-card">
+                                    <div class="position-relative">
+                                        <img src="img/courses/franch.jpg" class="card-img-top course-img" alt="French Conversation">
+                                        <span class="course-level">Intermediate</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="course-category">French</span>
+                                        <h5 class="course-title">French Conversation</h5>
+                                        <p class="course-instructor">By Prof. Sophie Dubois</p>
+                                        <p class="card-text">Improve your French speaking and listening comprehension skills.</p>
+                                        <div class="course-meta">
+                                            <span class="course-price">$199</span>
+                                            <div class="course-rating">
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star checked"></i>
+                                                <i class="ti-star"></i>
+                                                <span>(98)</span>
+                                            </div>
+                                        </div>
+                                        <a href="french-details.html" class="course-details-btn">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Courses Area =================-->
+
+
+    <section class="price_list_download section_gap">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="download-card text-center">
+                    <div class="download-icon">
+                        <i class="ti-download"></i>
+                    </div>
+                    <h3>Download Price List</h3>
+                    <p>Get our complete course catalog with pricing in Word format</p>
+                    <a href="files/Excellent_Coaching_Course_Price_List.docx" class="download-btn" download>
+                        <i class="ti-download"></i>
+                        Download Price List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--================ Start footer Area  =================-->
+    <footer class="footer-area section_gap">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Top Products</h4>
+                  <ul>
+                    <li><a href="#">Managed Website</a></li>
+                    <li><a href="#">Manage Reputation</a></li>
+                    <li><a href="#">Power Tools</a></li>
+                    <li><a href="#">Marketing Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Brand Assets</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Features</h4>
+                  <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Brand Assets</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Resources</h4>
+                  <ul>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Experts</a></li>
+                    <li><a href="#">Agencies</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 single-footer-widget">
+                  <h4>Newsletter</h4>
+                  <p>You can trust us. we only send promo offers,</p>
+                  <div class="form-wrap" id="mc_embed_signup">
+                    <form
+                      target="_blank"
+                      action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                      method="get"
+                      class="form-inline"
+                    >
+                      <input
+                        class="form-control"
+                        name="EMAIL"
+                        placeholder="Your Email Address"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Your Email Address'"
+                        required=""
+                        type="email"
+                      />
+                      <button class="click-btn btn btn-default">
+                        <span>subscribe</span>
+                      </button>
+                      <div style="position: absolute; left: -5000px;">
+                        <input
+                          name="b_36c4fd991d266f23781ded980_aefe40901a"
+                          tabindex="-1"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+      
+                      <div class="info"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row footer-bottom d-flex justify-content-between">
+                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+                
+                </p>
+                <div class="col-lg-4 col-sm-12 footer-social">
+                  <a href="#"><i class="ti-facebook"></i></a>
+                  <a href="#"><i class="ti-twitter"></i></a>
+                  <a href="#"><i class="ti-dribbble"></i></a>
+                  <a href="#"><i class="ti-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!--================ End footer Area  =================-->
+      
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="js/jquery-3.2.1.min.js"></script>
+          <script src="js/popper.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+          <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+          <script src="js/owl-carousel-thumb.min.js"></script>
+          <script src="js/jquery.ajaxchimp.min.js"></script>
+          <script src="js/mail-script.js"></script>
+          <!--gmaps Js-->
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+          <script src="js/gmaps.min.js"></script>
+          <script src="js/theme.js"></script>
+          <script>
+            // Filter functionality
+            document.addEventListener('DOMContentLoaded', function() {
+              const filterButtons = document.querySelectorAll('.filter-btn');
+              
+              filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                  // Remove active class from all buttons
+                  filterButtons.forEach(btn => btn.classList.remove('active'));
+                  
+                  // Add active class to clicked button
+                  this.classList.add('active');
+                  
+                  const filter = this.getAttribute('data-filter');
+                  
+                  // Show/hide departments based on filter
+                  const departments = document.querySelectorAll('.department-section');
+                  
+                  departments.forEach(dept => {
+                    if (filter === 'all' || dept.id === filter) {
+                      dept.style.display = 'block';
+                    } else {
+                      dept.style.display = 'none';
+                    }
+                  });
+                });
+              });
+            });
+          </script>
+        </body>
+      </html>

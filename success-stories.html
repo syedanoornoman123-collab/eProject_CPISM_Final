@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <title>Success Stories - Excellent Coaching</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .success-story-card {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        margin-bottom: 30px;
+      }
+      .success-story-card:hover {
+        transform: translateY(-5px);
+      }
+      .student-img {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .story-content {
+        padding: 25px;
+      }
+      .story-quote {
+        font-style: italic;
+        color: #555;
+        margin-bottom: 15px;
+      }
+      .student-name {
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 5px;
+      }
+      .student-achievement {
+        color: #002347;
+        font-size: 14px;
+      }
+      .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .section-title h2 {
+        position: relative;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+      .section-title h2:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: #002347;
+      }
+      .stats-section {
+        background: #f9f9ff;
+        padding: 60px 0;
+        margin: 60px 0;
+      }
+      .stat-item {
+        text-align: center;
+        padding: 20px;
+      }
+      .stat-number {
+        font-size: 48px;
+        font-weight: bold;
+        color: #002347;
+        margin-bottom: 10px;
+      }
+      .stat-text {
+        font-size: 18px;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area white-header">
+        <div class="main_menu">
+          <div class="search_input" id="search_input_box">
+            <div class="container">
+              <form class="d-flex justify-content-between" method="" action="">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="search_input"
+                  placeholder="Search Here"
+                />
+                <button type="submit" class="btn"></button>
+                <span
+                  class="ti-close"
+                  id="close_search"
+                  title="Close Search"
+                ></span>
+              </form>
+            </div>
+          </div>
+  
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand logo_h d-flex align-items-center" href="index.html">
+                <img
+                  src="img/logo.png"
+                  alt="Logo"
+                  style="height: 50px; width: auto; object-fit: contain;"
+                />
+                <span class="ms-2 caprasimo-regular brand-text" 
+                      style="font-family: 'Caprasimo', serif; text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;">
+                  Excellent Coaching
+                </span>
+              </a>
+              
+  
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse offset"
+                id="navbarSupportedContent"
+              >
+                <ul class="nav navbar-nav menu_nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About</a>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Pages</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="course-details.html"
+                          >Course Details</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="faculty.html">Faculty</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="success-stories.html">Success Stories</a>
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link search" id="search">
+                      <i class="ti-search"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <!--================ End Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="banner_content text-center">
+                <h2>Success Stories</h2>
+                <div class="page_link">
+                  <a href="index.html">Home</a>
+                  <a href="success-stories.html">Success Stories</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================ Start Success Stories Area =================-->
+    <section class="success-stories-area section_gap">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Students' Success Stories</h2>
+          <p>Discover how our coaching has transformed lives and careers</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="success-story-card">
+              <img class="student-img" src="img/success/s1.jpg" alt="Sarah Johnson">
+              <div class="story-content">
+                <p class="story-quote">"Excellent Coaching helped me achieve my dream of getting into a top university. The personalized guidance and comprehensive test preparation made all the difference."</p>
+                <h4 class="student-name">Sarah Johnson</h4>
+                <p class="student-achievement">Admitted to Harvard University</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="success-story-card">
+              <img class="student-img" src="img/success/s2.jpg" alt="Michael Chen">
+              <div class="story-content">
+                <p class="story-quote">"The coding bootcamp at Excellent Coaching completely changed my career trajectory. I went from working in retail to landing a six-figure job as a software engineer."</p>
+                <h4 class="student-name">Michael Chen</h4>
+                <p class="student-achievement">Software Engineer at Google</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="success-story-card">
+              <img class="student-img" src="img/success/s3.jpg" alt="Priya Sharma">
+              <div class="story-content">
+                <p class="story-quote">"As an international student, I was struggling with the GMAT. The expert tutors at Excellent Coaching helped me improve my score by 100 points and get into my dream MBA program."</p>
+                <h4 class="student-name">Priya Sharma</h4>
+                <p class="student-achievement">MBA at Stanford University</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="success-story-card">
+              <img class="student-img" src="img/success/s4.jpg" alt="David Rodriguez">
+              <div class="story-content">
+                <p class="story-quote">"The medical school preparation program was exceptional. The mock interviews and personalized feedback gave me the confidence to excel in my actual medical school interviews."</p>
+                <h4 class="student-name">David Rodriguez</h4>
+                <p class="student-achievement">Medical Student at Johns Hopkins</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="success-story-card">
+              <img class="student-img" src="img/success/s5.jpg" alt="Emily Wilson">
+              <div class="story-content">
+                <p class="story-quote">"I never thought I could master advanced mathematics, but the patient and knowledgeable tutors at Excellent Coaching made complex concepts accessible and understandable."</p>
+                <h4 class="student-name">Emily Wilson</h4>
+                <p class="student-achievement">Scored 800 on SAT Math</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="success-story-card">
+              <img class="student-img" src="img/success/s6.jpg" alt="James Thompson">
+              <div class="story-content">
+                <p class="story-quote">"The career counseling services helped me identify my strengths and find the right career path. I'm now working in a field I'm passionate about and excelling in my role."</p>
+                <h4 class="student-name">James Thompson</h4>
+                <p class="student-achievement">Product Manager at Amazon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-number">1500+</div>
+              <div class="stat-text">Students Enrolled</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-number">98%</div>
+              <div class="stat-text">Success Rate</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-text">Expert Tutors</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-number">12</div>
+              <div class="stat-text">Years Experience</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section section_gap">
+      <div class="container">
+        <div class="section-title">
+          <h2>What Our Students Say</h2>
+          <p>Hear directly from our successful students</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="testimonial-item">
+              <div class="media">
+                <div class="d-flex">
+                  <img src="img/testimonials/t1.jpg" alt="Lisa Park" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                </div>
+                <div class="media-body">
+                  <p>"The personalized attention I received was incredible. My tutor understood exactly where I needed help and tailored the sessions to my learning style."</p>
+                  <h4>Lisa Park</h4>
+                  <div class="star">
+                    <span class="ti-star checked"></span>
+                    <span class="ti-star checked"></span>
+                    <span class="ti-star checked"></span>
+                    <span class="ti-star checked"></span>
+                    <span class="ti-star checked"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="testimonial-item">
+              <div class="media">
+                <div class="d-flex">
+                  <img src="img/testimonials/t2.jpg" alt="Robert Kim" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                </div>
+                <div class="media-body">
+                  <p>"I was struggling with physics for months until I joined Excellent Coaching. The tutors broke down complex concepts in a way that finally made sense to me."</p>
+                  <h4>Robert Kim</h4>
+                  <div class="star">
+                    <span class="ti-star checked"></span>
+                    <span class="ti-star checked"></span>
+                    <span class="ti-star checked"></span>
+                    <span class="ti-star checked"></span>
+                    <span class="ti-star checked"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Success Stories Area =================-->
+
+    <!--================ Start footer Area  =================-->
+    <footer class="footer-area section_gap">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Top Products</h4>
+                  <ul>
+                    <li><a href="#">Managed Website</a></li>
+                    <li><a href="#">Manage Reputation</a></li>
+                    <li><a href="#">Power Tools</a></li>
+                    <li><a href="#">Marketing Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Brand Assets</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Features</h4>
+                  <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Brand Assets</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Resources</h4>
+                  <ul>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Experts</a></li>
+                    <li><a href="#">Agencies</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 single-footer-widget">
+                  <h4>Newsletter</h4>
+                  <p>You can trust us. we only send promo offers,</p>
+                  <div class="form-wrap" id="mc_embed_signup">
+                    <form
+                      target="_blank"
+                      action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                      method="get"
+                      class="form-inline"
+                    >
+                      <input
+                        class="form-control"
+                        name="EMAIL"
+                        placeholder="Your Email Address"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Your Email Address'"
+                        required=""
+                        type="email"
+                      />
+                      <button class="click-btn btn btn-default">
+                        <span>subscribe</span>
+                      </button>
+                      <div style="position: absolute; left: -5000px;">
+                        <input
+                          name="b_36c4fd991d266f23781ded980_aefe40901a"
+                          tabindex="-1"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+      
+                      <div class="info"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row footer-bottom d-flex justify-content-between">
+                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+                
+                </p>
+                <div class="col-lg-4 col-sm-12 footer-social">
+                  <a href="#"><i class="ti-facebook"></i></a>
+                  <a href="#"><i class="ti-twitter"></i></a>
+                  <a href="#"><i class="ti-dribbble"></i></a>
+                  <a href="#"><i class="ti-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!--================ End footer Area  =================-->
+      
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="js/jquery-3.2.1.min.js"></script>
+          <script src="js/popper.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+          <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+          <script src="js/owl-carousel-thumb.min.js"></script>
+          <script src="js/jquery.ajaxchimp.min.js"></script>
+          <script src="js/mail-script.js"></script>
+          <!--gmaps Js-->
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+          <script src="js/gmaps.min.js"></script>
+          <script src="js/theme.js"></script>
+        </body>
+      </html>

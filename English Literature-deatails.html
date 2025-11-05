@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <title>English Literature - Course Details | Excellent Coaching</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      :root {
+      --primary: #002347;
+        --primary-dark: #001a33;
+        --secondary: #6c757d;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --success: #28a745;
+        --warning: #ffc107;
+      }
+      
+      body {
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+        line-height: 1.6;
+      }
+      
+      /* Course Details */
+      .course_details_area {
+        padding: 80px 0;
+      }
+      
+      .main_image img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+      
+      .content_wrapper h4.title {
+        position: relative;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        font-weight: 700;
+      }
+      
+      .content_wrapper h4.title:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background-color: var(--primary);
+      }
+      
+      .content_wrapper .content {
+        margin-bottom: 40px;
+        color: var(--secondary);
+      }
+      
+      .course_list {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .course_list li {
+        padding: 15px 0;
+        border-bottom: 1px solid #e9ecef;
+        transition: all 0.3s ease;
+      }
+      
+      .course_list li:hover {
+        background-color: rgba(45, 127, 249, 0.05);
+        padding-left: 10px;
+      }
+      
+      .course_list li p {
+        margin: 0;
+        font-weight: 500;
+      }
+      
+      .primary-btn {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+      }
+      
+      .primary-btn:hover {
+        background: var(--primary-dark);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(45, 127, 249, 0.3);
+      }
+      
+      /* Right Sidebar */
+      .right-contents {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        position: sticky;
+        top: 100px;
+      }
+      
+      .right-contents ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+      }
+      
+      .right-contents ul li {
+        padding: 15px 0;
+        border-bottom: 1px solid #e9ecef;
+      }
+      
+      .right-contents ul li:last-child {
+        border-bottom: none;
+      }
+      
+      .right-contents ul li a {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: var(--dark);
+        transition: all 0.3s ease;
+      }
+      
+      .right-contents ul li a:hover {
+        color: var(--primary);
+      }
+      
+      .right-contents ul li a p {
+        margin: 0;
+        font-weight: 500;
+      }
+      
+      .right-contents ul li a span {
+        color: var(--primary);
+        font-weight: 600;
+      }
+      
+      .primary-btn2 {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      
+      .primary-btn2:hover {
+        background: var(--primary-dark);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(45, 127, 249, 0.3);
+      }
+      
+      /* Reviews Section */
+      .review-top {
+        margin-bottom: 30px;
+      }
+      
+      .reviews {
+        margin-bottom: 15px;
+        padding: 10px 0;
+      }
+      
+      .star {
+        color: var(--warning);
+      }
+      
+      .star .ti-star.checked {
+        color: var(--warning);
+      }
+      
+      .feedeback textarea {
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+        padding: 15px;
+        resize: vertical;
+        min-height: 120px;
+        transition: all 0.3s ease;
+      }
+      
+      .feedeback textarea:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(45, 127, 249, 0.2);
+        outline: none;
+      }
+      
+      .comments-area {
+        margin-top: 30px;
+      }
+      
+      .single-comment {
+        padding: 20px 0;
+        border-bottom: 1px solid #e9ecef;
+      }
+      
+      .single-comment:last-child {
+        border-bottom: none;
+      }
+      
+      .user .thumb {
+        margin-right: 15px;
+      }
+      
+      .user .thumb img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      
+      .user .desc h5 {
+        margin-bottom: 5px;
+      }
+      
+      .user .desc h5 a {
+        color: var(--dark);
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      .user .desc h5 a:hover {
+        color: var(--primary);
+      }
+      
+      .user .desc .comment {
+        color: var(--secondary);
+        margin-top: 10px;
+      }
+      
+      /* Course Stats */
+      .course-stats {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+        padding: 20px;
+        background: rgba(45, 127, 249, 0.05);
+        border-radius: 12px;
+      }
+      
+      .stat-item {
+        text-align: center;
+      }
+      
+      .stat-value {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--primary);
+        display: block;
+      }
+      
+      .stat-label {
+        font-size: 0.9rem;
+        color: var(--secondary);
+      }
+      
+      /* Instructor Section */
+      .instructor-card {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+      }
+      
+      .instructor-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      
+      .instructor-info h5 {
+        margin-bottom: 5px;
+      }
+      
+      .instructor-info p {
+        color: var(--secondary);
+        margin-bottom: 10px;
+      }
+      
+      .instructor-rating {
+        color: var(--warning);
+      }
+      
+      /* Course Features */
+      .course-features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 20px 0;
+      }
+      
+      .feature-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background: rgba(45, 127, 249, 0.05);
+        border-radius: 8px;
+      }
+      
+      .feature-icon {
+        margin-right: 10px;
+        color: var(--primary);
+        font-size: 1.2rem;
+      }
+      
+      /* Responsive Adjustments */
+      @media (max-width: 991px) {
+        .right-contents {
+          position: static;
+          margin-top: 40px;
+        }
+        
+        .course-features {
+          grid-template-columns: 1fr;
+        }
+      }
+      
+      @media (max-width: 767px) {
+        .instructor-card {
+          flex-direction: column;
+          text-align: center;
+        }
+        
+        .instructor-img {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+        
+        .course-stats {
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area white-header">
+        <div class="main_menu">
+          <div class="search_input" id="search_input_box">
+            <div class="container">
+              <form class="d-flex justify-content-between" method="" action="">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="search_input"
+                  placeholder="Search Here"
+                />
+                <button type="submit" class="btn"></button>
+                <span
+                  class="ti-close"
+                  id="close_search"
+                  title="Close Search"
+                ></span>
+              </form>
+            </div>
+          </div>
+  
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand logo_h d-flex align-items-center" href="index.html">
+                <img
+                  src="img/logo.png"
+                  alt="Logo"
+                  style="height: 50px; width: auto; object-fit: contain;"
+                />
+                <span class="ms-2 caprasimo-regular brand-text" 
+                      style="font-family: 'Caprasimo', serif; text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;">
+                  Excellent Coaching
+                </span>
+              </a>
+              
+  
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse offset"
+                id="navbarSupportedContent"
+              >
+                <ul class="nav navbar-nav menu_nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="about-us.html">About</a>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Pages</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="course-details.html"
+                          >Course Details</a
+                        >
+                        <li class="nav-item">
+                          <a class="nav-link" href="faculty.html">Faculty</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="success-stories.html">Success Stories</a>
+                        </li>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link search" id="search">
+                      <i class="ti-search"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <!--================ End Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="banner_content text-center">
+                <h2>English Literature</h2>
+                <div class="page_link">
+                  <a href="index.html">Home</a>
+                  <a href="courses.html">Courses</a>
+                  <a href="course-details.html">Course Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================ Start Course Details Area =================-->
+    <section class="course_details_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 course_details_left">
+                    <!-- Instructor Section -->
+                    <div class="instructor-card">
+                        <img src="img/courses/author1.png" alt="Prof. Jennifer Brown" class="instructor-img">
+                        <div class="instructor-info">
+                            <h5>Prof. Jennifer Brown</h5>
+                            <p>Professor of English Literature & Literary Critic</p>
+                            <div class="instructor-rating">
+                                <i class="ti-star checked"></i>
+                                <i class="ti-star checked"></i>
+                                <i class="ti-star checked"></i>
+                                <i class="ti-star checked"></i>
+                                <i class="ti-star checked"></i>
+                                <span>(4.8/5.0)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Course Stats -->
+                    <div class="course-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">4.7</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">145</span>
+                            <span class="stat-label">Students</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">20</span>
+                            <span class="stat-label">Lectures</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">10</span>
+                            <span class="stat-label">Weeks</span>
+                        </div>
+                    </div>
+                    
+                    <div class="main_image">
+                        <img class="img-fluid" src="img/courses/english.jpg" alt="English Literature">
+                    </div>
+                    <div class="content_wrapper">
+                        <h4 class="title">Course Overview</h4>
+                        <div class="content">
+                            This comprehensive English Literature course takes you on a journey through the rich tapestry of English literary tradition, from the medieval period to contemporary works. Through close reading, critical analysis, and engaging discussions, you'll develop a deep appreciation for literary masterpieces and the cultural contexts that shaped them.
+                            <br><br>
+                            Whether you're preparing for exams, pursuing higher education in literature, or simply passionate about great writing, this course will enhance your analytical skills, expand your literary knowledge, and deepen your understanding of the human experience as expressed through literature.
+                        </div>
+
+                        <h4 class="title">What You'll Learn</h4>
+                        <div class="content">
+                            <ul>
+                                <li>Analyze major works from different literary periods</li>
+                                <li>Understand literary devices, forms, and genres</li>
+                                <li>Develop critical thinking and analytical writing skills</li>
+                                <li>Explore the historical and cultural contexts of literary works</li>
+                                <li>Identify major themes and motifs in English literature</li>
+                                <li>Compare different literary movements and their characteristics</li>
+                                <li>Write insightful literary criticism and analysis</li>
+                                <li>Appreciate the evolution of the English language through literature</li>
+                                <li>Understand the relationship between literature and society</li>
+                                <li>Prepare for advanced literature courses and standardized tests</li>
+                            </ul>
+                        </div>
+
+                        <h4 class="title">Course Features</h4>
+                        <div class="course-features">
+                            <div class="feature-item">
+                                <span class="feature-icon ti-video-camera"></span>
+                                <span>20 Video Lectures</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon ti-book"></span>
+                                <span>Downloadable Resources</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon ti-time"></span>
+                                <span>Lifetime Access</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon ti-medall"></span>
+                                <span>Certificate of Completion</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon ti-help"></span>
+                                <span>Q&A Support</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon ti-mobile"></span>
+                                <span>Mobile & TV Access</span>
+                            </div>
+                        </div>
+
+                        <h4 class="title">Prerequisites</h4>
+                        <div class="content">
+                            This course is designed for students with a basic understanding of English language and literature. While no prior specialized knowledge is required, a love for reading and an interest in exploring literary works will enhance your learning experience.
+                            <br><br>
+                            All required readings will be provided, though students are encouraged to obtain their own copies of major works for annotation and deeper study. We provide supplementary materials for students who want to strengthen their foundational reading and writing skills.
+                        </div>
+
+                        <h4 class="title">Course Curriculum</h4>
+                        <div class="content">
+                            <ul class="course_list">
+                                <li class="justify-content-between d-flex">
+                                    <p><strong>Week 1:</strong> Introduction to Literary Analysis & Medieval Literature</p>
+                                    <a class="primary-btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p><strong>Week 2:</strong> Renaissance Poetry and Drama</p>
+                                    <a class="primary-btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p><strong>Week 3:</strong> Shakespeare: Comedies and Tragedies</p>
+                                    <a class="primary-btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p><strong>Week 4:</strong> The Rise of the Novel in the 18th Century</p>
+                                    <a class="primary-btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p><strong>Week 5:</strong> Romantic Poetry and Prose</p>
+                                    <a class="primary-btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p><strong>Week 6:</strong> Victorian Literature and Social Commentary</p>
+                                    <a class="primary-btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p><strong>Week 7:</strong> Modernist Literature and Experimentation</p>
+                                    <a class="primary-btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p><strong>Week 8:</strong> Postcolonial Literature and Global Voices</p>
+                                    <a class="primary-btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p><strong>Week 9:</strong> Contemporary Fiction and Poetry</p>
+                                    <a class="primary-btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p><strong>Week 10:</strong> Literary Theory and Final Project</p>
+                                    <a class="primary-btn text-uppercase" href="#">View Details</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 right-contents">
+                    <ul>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Trainer's Name</p>
+                                <span>Prof. Jennifer Brown</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Course Fee</p>
+                                <span>$189</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Available Seats</p>
+                                <span>12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Schedule</p>
+                                <span>Tue & Thu, 3.00 pm to 5.00 pm</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Course Level</p>
+                                <span>All Levels</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Duration</p>
+                                <span>10 Weeks</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Start Date</p>
+                                <span>November 5, 2023</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="primary-btn2 text-uppercase enroll rounded-0 text-white">Enroll the course</a>
+
+                    <h4 class="title">Reviews</h4>
+                    <div class="content">
+                        <div class="review-top row pt-40">
+                            <div class="col-lg-12">
+                                <h6 class="mb-15">Provide Your Rating</h6>
+                                <div class="d-flex flex-row reviews justify-content-between">
+                                    <span>Course Content</span>
+                                    <div class="star">
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row reviews justify-content-between">
+                                    <span>Instructor Knowledge</span>
+                                    <div class="star">
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row reviews justify-content-between">
+                                    <span>Support Quality</span>
+                                    <div class="star">
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star checked"></i>
+                                        <i class="ti-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedeback">
+                            <h6>Your Feedback</h6>
+                            <textarea name="feedback" class="form-control" cols="10" rows="5" placeholder="Write your review here..."></textarea>
+                            <div class="mt-10 text-right">
+                                <a href="#" class="primary-btn2 text-right rounded-0 text-white">Submit Review</a>
+                            </div>
+                        </div>
+                        <div class="comments-area mb-30">
+                            <div class="comment-list">
+                                <div class="single-comment single-reviews justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="img/blog/c1.jpg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Emily Wilson</a>
+                                                <div class="star">
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                </div>
+                                            </h5>
+                                            <p class="comment">
+                                                Professor Brown's passion for literature is infectious! Her insights into Shakespeare's works completely transformed my understanding. The course materials are comprehensive and the discussions are thought-provoking.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <div class="single-comment single-reviews justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="img/blog/c2.jpg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Robert Johnson</a>
+                                                <div class="star">
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star"></span>
+                                                </div>
+                                            </h5>
+                                            <p class="comment">
+                                                As someone who hadn't studied literature since high school, this course was the perfect reintroduction. The chronological approach helped me understand the evolution of English literature clearly.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <div class="single-comment single-reviews justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="img/blog/c3.jpg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Sophia Martinez</a>
+                                                <div class="star">
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                    <span class="ti-star checked"></span>
+                                                </div>
+                                            </h5>
+                                            <p class="comment">
+                                                The balance between classic and contemporary literature is perfect. I particularly enjoyed the sessions on postcolonial literature, which opened my eyes to perspectives I hadn't considered before.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Course Details Area =================-->
+
+    <!--================ Start footer Area  =================-->
+    <footer class="footer-area section_gap">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Top Products</h4>
+                  <ul>
+                    <li><a href="#">Managed Website</a></li>
+                    <li><a href="#">Manage Reputation</a></li>
+                    <li><a href="#">Power Tools</a></li>
+                    <li><a href="#">Marketing Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Brand Assets</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Features</h4>
+                  <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Brand Assets</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                  <h4>Resources</h4>
+                  <ul>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Experts</a></li>
+                    <li><a href="#">Agencies</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 single-footer-widget">
+                  <h4>Newsletter</h4>
+                  <p>You can trust us. we only send promo offers,</p>
+                  <div class="form-wrap" id="mc_embed_signup">
+                    <form
+                      target="_blank"
+                      action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                      method="get"
+                      class="form-inline"
+                    >
+                      <input
+                        class="form-control"
+                        name="EMAIL"
+                        placeholder="Your Email Address"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Your Email Address'"
+                        required=""
+                        type="email"
+                      />
+                      <button class="click-btn btn btn-default">
+                        <span>subscribe</span>
+                      </button>
+                      <div style="position: absolute; left: -5000px;">
+                        <input
+                          name="b_36c4fd991d266f23781ded980_aefe40901a"
+                          tabindex="-1"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+      
+                      <div class="info"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row footer-bottom d-flex justify-content-between">
+                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+  
+                </p>
+                <div class="col-lg-4 col-sm-12 footer-social">
+                  <a href="#"><i class="ti-facebook"></i></a>
+                  <a href="#"><i class="ti-twitter"></i></a>
+                  <a href="#"><i class="ti-dribbble"></i></a>
+                  <a href="#"><i class="ti-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!--================ End footer Area  =================-->
+      
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="js/jquery-3.2.1.min.js"></script>
+          <script src="js/popper.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+          <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+          <script src="js/owl-carousel-thumb.min.js"></script>
+          <script src="js/jquery.ajaxchimp.min.js"></script>
+          <script src="js/mail-script.js"></script>
+          <!--gmaps Js-->
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+          <script src="js/gmaps.min.js"></script>
+          <script src="js/theme.js"></script>
+        </body>
+      </html>
